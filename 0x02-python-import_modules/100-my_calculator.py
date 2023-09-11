@@ -9,6 +9,6 @@ if (__name__ == "__main__"):
         if sign == argv[2]:
             result = eval(f"{argv[1]} {argv[2]} {argv[3]}")
             print("{} {} {} = {}".format(argv[1], argv[2], argv[3], result))
-        else:
-            print("Unknown operator. Available operators: +, -, * and /")
-            exit(1)
+    if argv[2] not in ('+', '-', '*', '/'):
+        print("Unknown operator. Available operators: +, -, * and /")
+        exit(1)
