@@ -8,42 +8,35 @@
  */
 int is_palindrome(listint_t **head)
 {
-	listint_t *current = *head;
-	int count = 0, x = 0;
-	int *arr = NULL;
+	listint_t *nextNode = NULL;
+	int *pali = malloc(sizeof(int)), size = 1, idx = 0;
 
-	if (head == NULL)
+	if (!head || !pali)
 		return (0);
-	if (*head == NULL)
+	if (!*head)
 		return (1);
 
-	/*count how many elements there are*/
-	while (current)
+	pali[0] = (*head)->n;
+	nextNode = (*head)->next;
+	while (nextNode)
 	{
-		count++;
-		current = current->next;
-	}
-
-	arr = malloc(sizeof(int) * count);
-	if (arr == NULL)
-		return (0);
-
-	current = *head;
-
-	for (x = 0; x < count; x++)
-	{
-		arr[x] = current->n;
-		current = current->next;
-	}
-
-	for (x = 0; x < count / 2; x++)
-	{
-		if (arr[x] != arr[count - (x + 1)])
+		size++;
+		pali = realloc(pali, sizeof(int) * size);
+		if (!pali)
 		{
-			free(arr);
+			free(pali);
+			return (0);
+		}
+		pali[size - 1] = nextNode->n;
+		nextNode = nextNode->next;
+	}
+	for (; idx < size / 2; idx++)
+	{
+		if (pali[idx] != pali[size - (idx + 1)])
+		{
+			free(pali);
 			return (0);
 		}
 	}
-	free(arr);
 	return (1);
 }
