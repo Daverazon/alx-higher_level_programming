@@ -1,14 +1,17 @@
 #!/usr/bin/python3
 if (__name__ == "__main__"):
-    import calculator_1
+    from calculator_1 import add, sub, mul, div
     from sys import argv, exit
     if len(argv) != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
-    for sign in ('+', '-', '*', '/'):
+    a = int(argv[1])
+    b = int(argv[3])
+    func = [add, sub, mul, div]
+    op = ('+', '-', '*', '/')
+    for sign in op:
         if sign == argv[2]:
-            result = eval(f"{argv[1]} {argv[2]} {argv[3]}")
-            print("{} {} {} = {}".format(argv[1], argv[2], argv[3], result))
-    if argv[2] not in ('+', '-', '*', '/'):
+            print("{} {} {} = {}".format(a, argv[2], b, func[op.index(sign)](a, b)))
+    if sign not in op:
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
