@@ -11,7 +11,8 @@ if (__name__ == "__main__"):
     op = ['+', '-', '*', '/']
     for sign in op:
         if sign == sys.argv[2]:
-            print("{:d} {} {:d} = {:d}".format(a, sys.argv[2], b, func[op.index(sign)](a, b)))
+            print("{:d} {} {:d} = {:d}\
+".format(a, sys.argv[2], b, func[op.index(sign)](a, b)))
     if sys.argv[2] not in op:
         print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
