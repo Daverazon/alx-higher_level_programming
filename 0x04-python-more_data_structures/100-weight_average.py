@@ -7,5 +7,5 @@ def weight_average(my_list=[]):
             div += row[1]
         for m in mul:
             add += m
-    average = add / div
+        average = add / div
     return average
