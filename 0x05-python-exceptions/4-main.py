@@ -8,7 +8,7 @@ print(result)
 
 print("--")
 
-my_l_1 = [10, 8, 4, 4]
-my_l_2 = [2, 0, "H", 2, 7]
-result = list_division(my_l_1, my_l_2, max(len(my_l_1), len(my_l_2)))
+my_l_1 = [5, 4, "j", 3]
+my_l_2 = [[4, 5], 3, "j"]
+result = list_division(my_l_1, my_l_2, 2)
 print(result)
