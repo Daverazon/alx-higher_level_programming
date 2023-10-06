@@ -2,12 +2,12 @@
 
 class Square:
     """defines a square"""
+
     def __init__(self, size):
-    "Initialises a Square object
+        '''Initialises a new square
 
-    Args:
-        size (int): the first parameter
+        Args:
+            size (int): the size of the square
+        '''
 
-    Returns:
-        nothing
         self.__size = size
