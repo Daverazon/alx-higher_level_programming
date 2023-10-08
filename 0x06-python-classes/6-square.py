@@ -12,7 +12,6 @@ class Square:
             size (int): size of the square
             position (tuple): position of the square
         '''
-
         self.size = size
         self.position = position
 
@@ -22,7 +21,6 @@ class Square:
 
         Returns:
             Size of the square'''
-
         return self.__size
 
     @size.setter
@@ -32,7 +30,6 @@ class Square:
         Args:
             value (int): new value for size
         '''
-
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         if value < 0:
@@ -45,7 +42,6 @@ class Square:
 
         Returns:
             position of the square'''
-
         return self.__position
 
     @position.setter
@@ -55,9 +51,9 @@ class Square:
         Args:
             value (tuple): new value for position
         '''
-
-        if not isinstance(value, tuple) or len(value) != 2\
-           or value[0] < 0 or value[1] < 0:
+        if not isinstance(value, tuple) or len(value) != 2 or not\
+           all(isinstance(x, int) for x in value) or not\
+           all(x >= 0 for x in value):
             raise TypeError("position must be a tuple of 2 positive intgers")
         self.__position = value
 
@@ -70,7 +66,6 @@ class Square:
 
     def my_print(self):
         '''prints the square with #'''
-
         for prow in range((self.__position)[1]):
             print()
         for row in range(self.__size):
