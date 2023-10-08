@@ -12,15 +12,8 @@ class Square:
             size (int): size of a square
         '''
 
-        self.__size = size
-
-    @property
-    def size(self):
-        '''Check if size is correct type and value'''
-
-        if type(self.__size) is not int:
+        if not isinstance(size, int):
             raise TypeError("Size must be an integer")
-        elif self.__size < 0:
+        if size < 0:
             raise ValueError("size must be >= 0")
-
-    check_size()
+        self.__size = size
