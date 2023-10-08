@@ -67,12 +67,12 @@ class Square:
     def my_print(self):
         '''prints the square with #'''
         for prow in range((self.__position)[1]):
-            print()
+            print("")
         for row in range(self.__size):
             for pcolumn in range((self.__position)[0]):
                 print(" ", end='')
             for column in range(self.__size):
                 print("#", end='')
-            print()
+            print("")
         if self.__size == 0:
-            print()
+            print("")
