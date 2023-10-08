@@ -1,15 +1,16 @@
 #!/usr/bin/python3
+'''Define a square'''
+
 
 class Square:
-    '''Define a square'''
+    '''Represent a square'''
 
     def __init__(self, size=0):
-        '''Represent a square
+        '''Initialize a new square
 
         Args:
             size (int): size of the square
         '''
-
         self.size = size
 
     @property
@@ -18,7 +19,6 @@ class Square:
 
         Returns:
             Size of the square'''
-
         return self.__size
 
     @size.setter
@@ -28,7 +28,6 @@ class Square:
         Args:
             value (int): new value for size
         '''
-
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         if value < 0:
@@ -44,7 +43,6 @@ class Square:
 
     def my_print(self):
         '''prints the square with #'''
-
         for row in range(self.__size):
             for column in range(self.__size):
                 print("#", end='')

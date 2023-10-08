@@ -1,10 +1,12 @@
 #!/usr/bin/python3
+'''Define a square'''
+
 
 class Square:
-    '''Define a square'''
+    '''Represent a square'''
 
     def __init__(self, size=0, position=(0, 0)):
-        '''Represent a square
+        '''Initialize a new square
 
         Args:
             size (int): size of the square
@@ -16,7 +18,7 @@ class Square:
 
     @property
     def size(self):
-        '''get the value of size
+        '''get size
 
         Returns:
             Size of the square'''
@@ -48,10 +50,10 @@ class Square:
 
     @position.setter
     def position(self, value):
-        '''set the value of size
+        '''set the value of position
 
         Args:
-            value (int): new value for size
+            value (tuple): new value for position
         '''
 
         if not isinstance(value, tuple) or len(value) != 2\
