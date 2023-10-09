@@ -4,14 +4,14 @@ Square = __import__('6-square').Square
 my_square_1 = Square(3)
 my_square_1.my_print()
 
-print("--")
+print("1st end")
 
-my_square_2 = Square(3, (1, 1))
+my_square_2 = Square(3, (1, 5))
 my_square_2.my_print()
 
-print("--")
+print("2nd end")
 
-my_square_3 = Square(0, (3, 0))
+my_square_3 = Square(0, "position")
 my_square_3.my_print()
 
-print("--")
+print("3rd end")
