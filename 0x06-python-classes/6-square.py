@@ -68,6 +68,7 @@ class Square:
         '''prints the square with #'''
         if self.__size == 0:
             print("")
+            return
         for prow in range(self.__position[1]):
             print("")
         for row in range(self.__size):
