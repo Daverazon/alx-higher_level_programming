@@ -1,7 +1,7 @@
-#0x0A. Python - Inheritance
+# 0x0A. Python - Inheritance
 
-##Requirements
-###Python Scripts
+## Requirements
+### Python Scripts
 * Allowed editors: vi, vim, emacs
 * All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
 * All your files should end with a new line
@@ -11,7 +11,7 @@
 * All your files must be executable
 * The length of your files will be tested using wc
 
-###Python Test Cases
+### Python Test Cases
 * Allowed editors: vi, vim, emacs
 * All your files should end with a new line
 * All your test files should be inside a folder tests
@@ -23,5 +23,5 @@ All your functions (inside and outside a class) should have a documentation (pyt
 * A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
 * We strongly encourage you to work together on test cases, so that you don’t miss any edge case
 
-###Documentation
+### Documentation
 * Do not use the words import or from inside your comments, the checker will think you try to import some modules
