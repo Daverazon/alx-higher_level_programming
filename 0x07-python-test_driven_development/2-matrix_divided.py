@@ -1,4 +1,4 @@
-#!/usr/bin/pyhton3
+#!/usr/bin/python3
 '''
 Define a matrix element dividing function
 >>> matrix_divided([[1, 2, 3], [4, 5, 6]], 3)
