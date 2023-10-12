@@ -48,6 +48,8 @@ class Rectangle:
     def __str__(self):
         '''return printable representation of object'''
         rectangle_str = ''
+        if self.__width == 0:
+            return rectangle_str
         for row in range(self.__height):
             rectangle_str += '#' * self.__width
             if not row == self.__height - 1:
