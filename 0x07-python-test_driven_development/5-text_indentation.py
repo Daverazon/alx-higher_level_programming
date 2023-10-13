@@ -15,4 +15,4 @@ def text_indentation(text):
                 if letter == sign:
                     print('')
                     print('')
-text_indentation('Holberton.School? How are you: John')
+text_indentation('Holberton. School? How are you: John')
