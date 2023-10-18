@@ -1,0 +1,18 @@
+>>> MyList = __import__("1-my_list").MyList
+
+Usage: print_sorted(self)
+
+:: Prints all +ve integers in ascending order
+
+>>> MyList.print_sorted([5, 36, 1])
+[1, 5, 36]
+
+:: Prints all integers in ascending order even if there's -ve
+
+>>> MyList.print_sorted([5, -36, 1, -9])
+[-36, -9, 1, 5]
+
+:: Print empty list if empty list is passed
+
+>>> MyList.print_sorted([])
+[]
