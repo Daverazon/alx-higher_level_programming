@@ -50,9 +50,9 @@ True
 :: Check if it returns a new list
 
 >>> old = MyList([5, -1])
+>>> print(old)
+[5, -1]
 >>> new = old.print_sorted()
 [-1, 5]
->>> new is old
-False
->>> new == old
-False
+>>> print(old)
+[5, -1]
