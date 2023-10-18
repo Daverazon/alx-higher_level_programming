@@ -16,3 +16,43 @@ Usage: print_sorted(self)
 
 >>> MyList.print_sorted([])
 []
+
+:: Only accepts a list of integers
+
+>>> MyList.print_sorted([42, 4], [2, 1], [1.5, 1.6])
+Traceback (most recent call last):
+TypeError: print_sorted() takes 1 positional argument but 3 were given
+
+:: Check instantiation
+
+>>> lis = MyList([1, 2, -2])
+>>> lis
+[1, 2, -2]
+
+:: Check inherits from
+
+>>> issubclass(MyList, list)
+True
+
+:: Check append
+
+>>> lis = MyList([1, 2, -2])
+>>> lis.append(0)
+>>> lis
+[1, 2, -2, 0]
+
+:: Check __str__
+
+>>> lis = MyList([1, 2, -2])
+>>> print(lis)
+[1, 2, -2]
+
+:: Check if it returns a new list
+
+>>> old = MyList([5, -1])
+>>> new = old.print_sorted()
+[-1, 5]
+>>> new is old
+False
+>>> new == old
+False
