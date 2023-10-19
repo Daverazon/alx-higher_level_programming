@@ -42,8 +42,14 @@ class Square(Rectangle):
         '''Initialize a square class'''
         self.integer_validator("size", size)
         self.__size = size
-        super().__init__(self.__size, self.__size)
+        super().__init__(size, size)
 
     def area(self):
         '''returns area of a square'''
         return self.__size ** 2
+
+    def __str__(self):
+        """prints informal representation of object"""
+        baseClass = self.__class__.__bases__[0]
+        return f"[{baseClass.__name__}] {self.__size}/{self.__size}"
+    
