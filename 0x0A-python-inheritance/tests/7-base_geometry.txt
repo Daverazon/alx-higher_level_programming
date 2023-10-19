@@ -49,7 +49,7 @@ implemented.
 
     >>> bg.area()
     Traceback (most recent call last):
-    Exception: area() not implemented
+    Exception: area() is not implemented
 
 The second method, ``integer_validator(...)``, validates the integer value
 of a paramter. The first parameter, ``name``, is the name of the argument to
