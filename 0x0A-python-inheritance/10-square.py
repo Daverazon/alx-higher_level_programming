@@ -52,4 +52,3 @@ class Square(Rectangle):
         """prints informal representation of object"""
         baseClass = self.__class__.__bases__[0]
         return f"[{baseClass.__name__}] {self.__size}/{self.__size}"
-    
