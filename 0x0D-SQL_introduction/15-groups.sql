@@ -3,7 +3,7 @@
 -- the score
 -- the number of records for this score with the label number
 -- The list should be sorted by the number of records (descending)
-USE hbtn_0c_0;
 SELECT score, COUNT(*) AS number
 FROM second_table
-GROUP BY score;
+GROUP BY score
+ORDER BY number DESC;
