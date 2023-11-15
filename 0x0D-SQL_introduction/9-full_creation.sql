@@ -9,7 +9,6 @@
 -- id = 2, name = “Alex”, score = 3
 -- id = 3, name = “Bob”, score = 14
 -- id = 4, name = “George”, score = 8
-USE hbtn_0c_0;
 CREATE TABLE IF NOT EXISTS second_table (
 id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(256), score INT);
 
