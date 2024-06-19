@@ -4,7 +4,7 @@
 
 def add_integer(a, b=98):
     """
-    Integer addition function
+    Adds two integers together
 
     Args:
         a (int/float): First number
