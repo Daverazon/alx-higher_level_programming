@@ -58,3 +58,11 @@ TypeError: Each row of the matrix must have the same size
 >>> matrix_divided([[34, 5], [3.34, 97]], 0)
 Traceback (innermost last):
 ZeroDivisionError: division by zero
+
+=================
+Test return value
+=================
+>>> mylist = [[3, 5], [8, 32.3]]
+>>> mylistdiv = matrix_divided(mylist, 2)
+>>> mylistdiv is mylist
+False
