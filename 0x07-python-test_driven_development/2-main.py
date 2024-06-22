@@ -5,5 +5,7 @@ matrix = [
     [1, 2, 3],
     [4, 5, 6]
 ]
-print(matrix_divided(matrix, 3))
+matrixcopy = matrix_divided(matrix, 3)
 print(matrix)
+print(matrixcopy)
+print(matrixcopy is matrix)
