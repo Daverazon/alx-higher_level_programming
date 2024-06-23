@@ -5,13 +5,15 @@
 def add_integer(a, b=98):
     """
     Adds two integers together
-
+    
+    Usage:
+        add_integer(a, b=98)
     Args:
         a (int/float): First number
         b (int/float): Second number
     Raises:
         TypeError: if a or b is neither of an integer or float
-    Returns:
+    Returns
         integer sum of a and b
     """
     ab = (['a', a], ['b', b])

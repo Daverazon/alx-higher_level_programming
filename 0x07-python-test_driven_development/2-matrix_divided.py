@@ -6,6 +6,8 @@ def matrix_divided(matrix, div):
     """
     Divides all elements of a matrix by div
 
+    Usage:
+        matrix_divided(matrix, div)
     Args:
         matrix (list): list of lists of integers or floats
         div (int/float): the divisor
