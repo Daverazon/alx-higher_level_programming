@@ -5,7 +5,7 @@
 def say_my_name(first_name, last_name=""):
     """
     It prints My name is <first name> <last name>
-    
+
     Usage:
         say_my_name(first_name, last_name="")
     Args:
