@@ -1,8 +1,9 @@
 >>> add_integer = __import__('0-add_integer').add_integer
 
-================================
-Test number of arguments
-================================
+
+====================
+Test argument number
+====================
 >>> add_integer()
 Traceback (most recent call last):
 ...
@@ -16,9 +17,9 @@ Traceback (innermost last):
 ...
 TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
 
-===================================================
-Test combinations of non-floats and/or non-integers
-===================================================
+==================
+Test argument type
+==================
 >>> add_integer('2', 3)
 Traceback (most recent call last):
 ...
@@ -33,9 +34,9 @@ TypeError: b must be an integer
 Traceback (most recent call last):
 TypeError: a must be an integer
 
-==============================================
-Test combinations of normal floats and integers
-==============================================
+===================
+Test argument value
+===================
 >>> add_integer(45.343, 93)
 138
 >>> add_integer(9, 3.54)
@@ -57,9 +58,6 @@ Test combinations of normal floats and integers
 >>> add_integer(-4.387, -70.8)
 -74
 
-=================================================
-Test combinations of abnormal floats and integers
-=================================================
 >>> add_integer(float('inf'), 5)
 Traceback (innermost last):
 ...

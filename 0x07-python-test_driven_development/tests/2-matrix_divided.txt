@@ -1,8 +1,9 @@
 >>> matrix_divided = __import__("2-matrix_divided").matrix_divided
 
-========================
-Test number of arguments
-========================
+
+====================
+Test argument number
+====================
 >>> matrix_divided([[2,3], [87, 0], [4.3, 3]], 4.5)
 [[0.44, 0.67], [19.33, 0.0], [0.96, 0.67]]
 
@@ -14,9 +15,9 @@ TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' an
 Traceback (innermost last):
 TypeError: matrix_divided() missing 1 required positional argument: 'div'
 
-======================
-Test type of arguments
-======================
+==================
+Test argument type
+==================
 >>> matrix_divided([3.5, 9], 4)
 Traceback (most recent call last):
 TypeError: matrix must be a matrix (list of lists) of integers/floats
@@ -29,9 +30,9 @@ TypeError: matrix must be a matrix (list of lists) of integers/floats
 Traceback (most recent call last):
 TypeError: div must be a number
 
-===============================
-Test value/content of arguments
-===============================
+===================
+Test argument value
+===================
 >>> matrix_divided([[]], 32)
 Traceback (most recent call last):
 TypeError: matrix must be a matrix (list of lists) of integers/floats
