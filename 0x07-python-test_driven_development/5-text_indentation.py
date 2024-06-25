@@ -4,7 +4,9 @@
 
 def text_indentation(text):
     """
-    prints a text with 2 new lines after each of these characters: ., ? and : without leaving any space at the beginning or at the end of each printed line
+    prints a text with 2 new lines after each of these characters: ., ?
+    and : without leaving any space at the beginning or at the end of
+    each printed line
 
     Usage:
         text_indentation(text)
@@ -15,7 +17,7 @@ def text_indentation(text):
     Returns:
         None
     """
-    
+
     if not isinstance(text, str):
         raise TypeError("text must be a string")
 
@@ -24,5 +26,8 @@ def text_indentation(text):
     while stop < len(text):
         stop += 1
         if text[stop - 1] in ('.', '?', ':') or stop == len(text):
-            print(text[start:stop].lstrip(), end='\n\n')
-            start = stop
+            if not all(character == ' ' for character in text[start:stop]):
+            # prevent printing empty lines when the text ends with
+            # spaces after the last special characters we're searching for
+                print(text[start:stop].lstrip(), end='\n\n')
+                start = stop
