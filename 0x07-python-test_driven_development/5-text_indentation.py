@@ -15,7 +15,14 @@ def text_indentation(text):
     Returns:
         None
     """
-
+    
     if not isinstance(text, str):
         raise TypeError("text must be a string")
 
+    start = 0
+    stop = 0
+    while stop < len(text):
+        stop += 1
+        if text[stop - 1] in ('.', '?', ':'):
+            print(text[start:stop].lstrip(), end='\n\n')
+            start = stop
