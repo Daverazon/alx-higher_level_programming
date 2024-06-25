@@ -23,6 +23,6 @@ def text_indentation(text):
     stop = 0
     while stop < len(text):
         stop += 1
-        if text[stop - 1] in ('.', '?', ':'):
+        if text[stop - 1] in ('.', '?', ':') or stop == len(text):
             print(text[start:stop].lstrip(), end='\n\n')
             start = stop

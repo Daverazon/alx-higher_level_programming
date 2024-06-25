@@ -4,21 +4,62 @@
 ====================
 Test argument number
 ====================
->>> text_indentation('You are a chicken, are you not? If not, well then, prove me otherwise. Now !!!')
-You are a chicken,
-are you not?
-If not,
-well then,
+>>> text_indentation("You are a chicken. Are you not? If not: what are you? prove me otherwise. Now !!!") 
+You are a chicken.
+<BLANKLINE>
+Are you not?
+<BLANKLINE>
+If not:
+<BLANKLINE>
+what are you?
+<BLANKLINE>
 prove me otherwise.
+<BLANKLINE>
 Now !!!
+<BLANKLINE>
 
 >>> text_indentation()
 Traceback (innermost last):
-TypeError: text_indentation() missing 1 required postitional argument: 'text'
+TypeError: text_indentation() missing 1 required positional argument: 'text'
 
 ==================
 Test argument type
 ==================
->>> text_indentation(55):
+>>> text_indentation(55)
 Traceback (innermost last):
 TypeError: text must be a string
+
+===========
+Test output
+===========
+>>> text_indentation("")
+
+>>> text_indentation("? what is it.")
+?
+<BLANKLINE>
+what is it.
+<BLANKLINE>
+
+>>> text_indentation("  .?   ::? ??:   :.        .    ") # doctest: +REPORT_NDIFF
+.
+<BLANKLINE>
+?
+<BLANKLINE>
+:
+<BLANKLINE>
+:
+<BLANKLINE>
+?
+<BLANKLINE>
+?
+<BLANKLINE>
+?
+<BLANKLINE>
+:
+<BLANKLINE>
+:
+<BLANKLINE>
+.
+<BLANKLINE>
+.
+<BLANKLINE>
