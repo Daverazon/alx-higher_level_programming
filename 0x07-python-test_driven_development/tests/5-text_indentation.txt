@@ -63,3 +63,6 @@ what is it.
 <BLANKLINE>
 .
 <BLANKLINE>
+
+>>> text_indentation("Johnny Depp")
+Johnny Depp

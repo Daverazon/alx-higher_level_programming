@@ -21,6 +21,15 @@ def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
 
+    whitespace = False
+    for char in text:
+        if not whitespace char != ' ' not whitespace:
+            print(char, end='')
+           if char in ('.', '?', ':'):
+               print('', end='\n\n')
+               whitespace = True
+
+
     start = 0
     stop = 0
     while stop < len(text):
