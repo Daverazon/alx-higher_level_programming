@@ -16,7 +16,6 @@ what are you?
 prove me otherwise.
 <BLANKLINE>
 Now !!!
-<BLANKLINE>
 
 >>> text_indentation()
 Traceback (innermost last):
