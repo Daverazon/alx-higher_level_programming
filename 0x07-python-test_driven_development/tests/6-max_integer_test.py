@@ -8,16 +8,29 @@ class TestMaxInteger(unittest.TestCase):
     """
     Test the max_integer function
     """
-    def test_listContents(self):
-        """
-        Test the results from various list contents
-        """
+    def test_max_in_last_position(self):
         self.assertEqual(max_integer([5, 30, 833]), 833)
-        self.assertEqual(max_integer([]), None)
-        self.assertEqual(max_integer([-434, -9.4, -1024]), -9.4)
+
+    def test_max_in_middle_position(self):
+        self.assertEqual(max_integer([4, 54, 2]), 54)
+
+    def test_max_in_first_position(self):
         self.assertEqual(max_integer(
             [float('inf'), float('nan')]), float('inf'))
-        self.assertEqual(max_integer([0]), 0)
+
+    def test_empty_list(self):
+        self.assertEqual(max_integer([]), None)
+
+    def test_all_negative_numbers(self):
+        self.assertEqual(max_integer([-434, -9.4, -1024]), -9.4)
+
+    def test_one_negative_number(self):
+        self.assertEqual(max_integer([-4, 84, 2]), 84)
+
+    def test_one_number(self):
+        self.assertEqual(max_integer([-379]), -379)
+
+    def test_all_numbers_same(self):
         self.assertEqual(max_integer([4, 4, 4]), 4)
 
 
